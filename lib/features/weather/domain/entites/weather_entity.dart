@@ -1,16 +1,16 @@
 class WeatherEntity {
-  final int id;
-  final String cityName;
-  final String main;
-  final String description;
-  final double temp;
-  final int pressure;
+  final int? weatherId;
+  final String? cityName;
+  final String? weatherMain;
+  final String? description;
+  final double? temp;
+  final int? pressure;
 
   WeatherEntity(
-      {required this.id,
-      required this.cityName,
-      required this.main,
-      required this.description,
-      required this.temp,
-      required this.pressure});
+      { this.weatherId,
+       this.cityName,
+       this.weatherMain,
+       this.description,
+       this.temp,
+       this.pressure});
 }

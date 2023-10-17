@@ -7,7 +7,7 @@ import '../../../../core/errors/error.dart';
 abstract class WeatherRepo {
 
 
-  Future<Either< Errors, List<WeatherEntity>>> getWeatherDataByCityName(String cityName);
+  Future<Either< Errors, WeatherEntity>> getWeatherDataByCityName(String cityName);
 
 }
 

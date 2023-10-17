@@ -10,7 +10,7 @@ class GetWeatherDataByCityNameUseCase extends UseCaseWithParam{
   GetWeatherDataByCityNameUseCase(this.weatherRepo);
 
   @override
-  Future<Either<Errors, List<WeatherEntity>>> call(param) async{
+  Future<Either<Errors, WeatherEntity>> call(param) async{
     return await weatherRepo.getWeatherDataByCityName("cityName");
   }
 }
