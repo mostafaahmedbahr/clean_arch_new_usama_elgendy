@@ -1,10 +1,10 @@
 class WeatherEntity {
   final int? weatherId;
   final String? cityName;
-  final String? weatherMain;
+  final dynamic weatherMain;
   final String? description;
-  final double? temp;
-  final int? pressure;
+  final num? temp;
+  final num? pressure;
 
   WeatherEntity(
       { this.weatherId,
